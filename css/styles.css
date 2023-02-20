@@ -7,3 +7,26 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(3,4,7,0.48), rgba(5,10,30,0.48)), url("https://github.com/magnumz888/HTML-Activity-Images/raw/main/pexels-royal-anwar-450214.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.header-brand{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.header-brand__span{
+    color: #20E700;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
