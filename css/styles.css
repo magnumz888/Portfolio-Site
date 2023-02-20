@@ -39,6 +39,7 @@ nav ul li{
 }
 
 nav ul li a{
+    font-weight: bold;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -49,4 +50,7 @@ nav ul li a{
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
+}
+.header-text h1{
+    font-size: 70px;
 }
