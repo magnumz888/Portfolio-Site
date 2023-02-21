@@ -54,7 +54,7 @@ nav ul li a{
 .header-text h1{
     font-size: 70px;
 }
-
+/********************************ABOUT ME SECTION ********************************/
 .about {
     background-color: #242323;
     height: 80vh;
@@ -95,6 +95,7 @@ nav ul li a{
     width: 5%;
     margin-right: 50px;
 }
+/*******************************MY PORTFOLIO SECTION *******************************/
 .portfolio{
     height: 100vh;
     padding: 50px 0;
@@ -133,3 +134,11 @@ nav ul li a{
     padding: .5% 1%;
 
 }
+/*******************************CONTACT SECTION *******************************/
+.contact{
+    background-color: #312D2D;
+    height:100vh;
+    margin-top: 300px;
+    padding: 5%;
+}
+/*******************************FOOTER SECTION *******************************/
