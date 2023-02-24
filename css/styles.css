@@ -1,130 +1,174 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* html{
+    font-size: 62.5%; /*10px for converting rem
+} */
+
+/********************************ELEMENT SELECTORS OR GLOBAL STYLES ********************************/
+
 body {
     font-family: 'Poppins', sans-serif;
+
 }
 
-.header{
+
+/********************************HERO SECTION ********************************/
+
+.header {
     height: 100vh;
-    background-image: linear-gradient(rgba(3,4,7,0.48), rgba(5,10,30,0.48)), url("https://github.com/magnumz888/HTML-Activity-Images/raw/main/pexels-royal-anwar-450214.jpg");
+    background-image: linear-gradient(rgba(3, 4, 7, 0.48), rgba(5, 10, 30, 0.48)), url('https://github.com/KodeGo-Bootcamp/HTML-Activity-Images/blob/main/pexels-royal-anwar-450214.jpg?raw=true');
     background-size: cover;
     background-position: center;
 }
-.header-brand{
+
+.header__image{
+    display: none;
+}
+
+.header-brand {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
     font-size: 45px;
 }
 
-.header-brand__span{
-    color: #3807FC;
+.header-brand__span {
+    color: #20E700;
+
 }
 
-nav{
-    
+nav {
+    /* background-color: orangered; */
     display: flex;
+    /*one dimensional main axis cross axis*/
     align-items: center;
     justify-content: space-between;
     padding: 3% 7%;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 10px 20px;
 }
 
-nav ul li a{
-    font-weight: bold;
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
-.header-text{
+
+.header-text {
+    /* background-color: orangered;  */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #fff;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 70px;
+    margin-top: 10px;
 }
+
+.header-text--2{
+    display: none;
+}
+
+
+
 /********************************ABOUT ME SECTION ********************************/
+
 .about {
     background-color: #242323;
     height: 80vh;
 }
-.about-text{
+
+.about-text {
     /* background-color: orangered; */
     color: white;
     margin: auto;
     text-align: center;
     width: 50%;
 }
-.about-text h2{
+
+.about-text h2 {
     font-size: 60px;
-    /* background-color: green; */
+    /* background-color:green; */
     padding-top: 6rem;
 }
-.about-text p{
+
+.about-text p {
+    /* background-color: blue; */
     padding-top: 2rem;
     line-height: 1.8rem;
     text-align: center;
 }
-.about-skills{
-    display:flex;
-    align-items: center;
+
+.about-skills {
     /* background-color: orangered; */
+    width: 50%;
     color: white;
     margin: auto;
     padding-top: 3%;
+    display: flex;
     justify-content: center;
-    width: 50%;
     flex-direction: row;
+    align-items: center;
 }
-.about-skills h3{
+
+.about-skills h3 {
     padding-right: 5%;
 }
-.about-skills__h3--1{
+
+.about-skills__h3--1 {
     border-bottom: 3px solid #20E700;
     width: 5%;
     margin-right: 50px;
 }
+
 /*******************************MY PORTFOLIO SECTION *******************************/
-.portfolio{
+.portfolio {
     height: 100vh;
     padding: 50px 0;
     text-align: center;
     color: #362D2D;
     font-size: 60px;
+
 }
-.portfolio h2{
+
+.portfolio__container {
+    display: grid;
+    /*two-dimensional*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    padding: 5%;
+    margin-top: 50px;
+}
+
+.portfolio h2 {
     margin-top: 1%;
     font-size: 60px;
 }
-.portfolio__container{
-    display: grid;
-    padding: 5%;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    grid-gap: 40px;
-}
-.portfolio__img{
+
+.portfolio__img {
     border-radius: 10px;
     position: relative;
 }
-.portfolio__img img{
+
+.portfolio__img img {
     object-fit: cover;
     width: 100%;
     height: 400px;
-    display: block;
     border-radius: 10px;
+    display: block;
 }
-.portfolio__btn{
+
+.portfolio__btn {
     background-color: #45893A;
     color: #fff;
     height: 84px;
@@ -132,52 +176,59 @@ nav ul li a{
     border-radius: 10px;
     text-decoration: none;
     padding: .5% 1%;
-
 }
+
 /*******************************CONTACT SECTION *******************************/
-.contact{
+.contact {
     background-color: #312D2D;
-    height:100vh;
+    height: 100vh;
     margin-top: 300px;
     padding: 5%;
     color: #fff;
 }
-.contact__row{
+
+.contact__row {
     display: flex;
     flex-direction: row;
 }
-.contact-left h2{
+
+.contact h2 {
     font-size: 60px;
 }
-.contact-left{
+
+.contact-left {
     flex-basis: 35%;
 }
-.contact-left p{
+
+.contact-left p {
     margin-top: 30px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #20E700;
     margin-right: 15px;
     font-size: 25px;
 }
-.contact-left__icons{
+
+.contact-left__icons {
     margin-top: 15px;
 }
-.contact-left__icons a{
+
+.contact-left__icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
     color: #D9D9D9;
     display: inline-block;
+
 }
 
-.contact-left__icons a:hover{
-    color:#45893A;
+.contact-left__icons a:hover {
+    color: #45893A;
     transform: translateY(-5px);
-
 }
 
-.contact__btn{
+.contact__btn {
     display: block;
     margin: 50px auto;
     border: 1px solid #2ecc71;
@@ -187,20 +238,25 @@ nav ul li a{
     color: white;
     width: fit-content;
 }
-.contact__btn:hover{
+
+.contact__btn:hover {
     background: #2ecc71;
 }
-.contact__btn.contact__btn--1{
+
+.contact__btn.contact__btn--1 {
     display: inline-block;
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 60%;
 }
-.contact-right form{
+
+.contact-right form {
     width: 100%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -211,21 +267,125 @@ form input, form textarea{
     font-size: 18px;
     border: 6px;
 }
-.contact__btn.contact__btn--2{
+
+
+.contact__btn.contact__btn--2 {
     display: inline-block;
     background-color: #312D2D;
     font-size: 18px;
 }
-.contact__btn--2:hover{
+
+.contact__btn--2:hover {
     background: #2ecc71;
     cursor: pointer;
 }
-footer{
+
+footer {
     height: 15vh;
     width: 100%;
     text-align: center;
     padding: 3% 0;
     background-color: #D9D9D9;
     font-weight: 300;
+
+
 }
+
 /*******************************FOOTER SECTION *******************************/
+
+
+
+/*-------------------------MEDIA QUERIES -------------------------*/
+
+/*-------------------------HERO SECTION -------------------------*/
+@media only screen and (max-width: 600px) {
+
+    .header {
+       background-image:none;
+       background-color: #242323;
+    }
+
+    .header__image{
+        display: block;
+    }
+
+    .header__image img{
+        object-fit: cover;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .header-text--2{
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+    .header-text--2 h2{
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.8;
+    }
+
+    .header-text--2 span{
+        color: #20e700;
+    }
+
+/* 
+    .header-brand {
+       
+    }
+
+    .header-brand__span {
+      
+    }
+
+    nav {
+      
+    }
+
+    nav ul li {
+       
+    }
+
+    nav ul li a {
+       
+    }
+
+   
+
+    .header-text h1 {
+       
+    } */
+}
+
+/*-------------------------ABOUT SECTION -------------------------*/
+/* @media only screen and (max-width: 600px){
+    
+} */
+
+/*-------------------------PORTFOLIO SECTION -------------------------*/
+/* @media only screen and (max-width: 600px){
+    
+} */
+/*-------------------------CONTACT SECTION -------------------------*/
+/* @media only screen and (max-width: 600px){
+    
+} */
+
+/*-------------------------FOOTER SECTION -------------------------*/
+/* @media only screen and (max-width: 600px){
+    
+} */
